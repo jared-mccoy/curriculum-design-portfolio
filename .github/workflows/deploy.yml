@@ -36,6 +36,18 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install nbconvert
+        run: pip install nbconvert
+
+      - name: Convert Jupyter notebooks to HTML
+        run: |
+          find . -name "*.ipynb" -exec jupyter nbconvert --to html {} \;
+
   deploy:
     environment:
       name: github-pages

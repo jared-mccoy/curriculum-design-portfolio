@@ -1,0 +1,11 @@
+plugins:
+  - jekyll-readme-index
+
+readme_index:
+  enabled: true
+  remove_originals: false
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
