@@ -63,6 +63,10 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
+      - name: Rename README.html to index.html
+        run: |
+          find ./_site -name "README.html" -exec sh -c 'mv "$0" "${0%README.html}index.html"' {} \;
+
   deploy:
     environment:
       name: github-pages
