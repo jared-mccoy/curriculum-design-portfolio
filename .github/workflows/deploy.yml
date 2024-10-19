@@ -36,6 +36,14 @@ jobs:
         run: |
           find . -name "*.ipynb" -exec jupyter nbconvert --to html {} \;
 
+      - name: Add front matter to README files
+        run: |
+          find . -name "README.md" | while read file; do
+            if ! grep -q "^---" "$file"; then
+              echo -e "---\nlayout: default\n---\n\n$(cat "$file")" > "$file.tmp" && mv "$file.tmp" "$file"
+            fi
+          done
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
 
