@@ -11,12 +11,12 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3  # Updated to the latest version
 
-      - name: Set up Node.js (if using a static site generator)
-        uses: actions/setup-node@v2
+      - name: Set up Node.js
+        uses: actions/setup-node@v3  # Updated to the latest version
         with:
-          node-version: '14'  # Specify the Node.js version if needed
+          node-version: '20'  # Specify the Node.js version
 
       - name: Install dependencies (if using a static site generator)
         run: |
@@ -31,4 +31,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./  # Adjust this to the directory you want to publish
-
