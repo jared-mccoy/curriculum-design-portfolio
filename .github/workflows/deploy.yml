@@ -15,21 +15,22 @@ jobs:
         with:
           submodules: true  # Fetch submodule content
 
-      - name: Set up Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '20'
+      # Remove these steps if you don't use npm
+      # - name: Set up Node.js
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: '20'
 
-      - name: Install dependencies (if using a static site generator)
-        run: |
-          npm install
+      # - name: Install dependencies (if using a static site generator)
+      #   run: |
+      #     npm install
 
-      - name: Build the project (if using a static site generator)
-        run: |
-          npm run build
+      # - name: Build the project (if using a static site generator)
+      #   run: |
+      #     npm run build
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Directory to publish, adjust based on your setup
+          publish_dir: ./  # Adjust this to the directory you want to publish
