@@ -15,22 +15,13 @@ jobs:
         with:
           submodules: true  # Fetch submodule content
 
-      # Remove these steps if you don't use npm
-      # - name: Set up Node.js
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: '20'
-
-      # - name: Install dependencies (if using a static site generator)
-      #   run: |
-      #     npm install
-
-      # - name: Build the project (if using a static site generator)
-      #   run: |
-      #     npm run build
-
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./  # Adjust this to the directory you want to publish
+        run: |
+          # Ensure the main branch is checked out
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "github-actions@github.com"
+          git add .
+          git commit -m "Deploying to GitHub Pages" || echo "No changes to commit"
+          git push origin main  # Push changes to the main branch
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
