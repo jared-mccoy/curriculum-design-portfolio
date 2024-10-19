@@ -5,6 +5,9 @@ on:
     branches:
       - main  # Trigger on main branch pushes
 
+permissions:
+  contents: write  # Ensure write permissions
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -15,13 +18,17 @@ jobs:
         with:
           submodules: true  # Fetch submodule content
 
+      - name: Copy submodule contents
+        run: |
+          mkdir -p ai-api-integration
+          cp -R AI-API-Integration/* ai-api-integration/
+          
       - name: Deploy to GitHub Pages
         run: |
-          # Ensure the main branch is checked out
           git config --global user.name "GitHub Actions"
           git config --global user.email "github-actions@github.com"
           git add .
           git commit -m "Deploying to GitHub Pages" || echo "No changes to commit"
-          git push origin main  # Push changes to the main branch
+          git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Use the default GitHub token
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
