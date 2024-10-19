@@ -1,0 +1,3 @@
+[submodule "AI-API-Integration"]
+	path = AI-API-Integration
+	url = https://github.com/jared-mccoy/AI-API-Integration.git
