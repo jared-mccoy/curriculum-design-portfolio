@@ -24,18 +24,6 @@ jobs:
           mkdir -p ai-api-integration
           cp -R AI-API-Integration/* ai-api-integration/
 
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-
-      - name: Create Gemfile and install dependencies
-        run: |
-          echo "source 'https://rubygems.org'" > Gemfile
-          echo "gem 'github-pages', group: :jekyll_plugins" >> Gemfile
-          echo "gem 'jekyll-readme-index'" >> Gemfile
-          bundle install
-
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
@@ -56,20 +44,32 @@ jobs:
             fi
           done
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --verbose
-        env:
-          JEKYLL_ENV: production
-
-      - name: Debug - List built site contents
+      - name: Debug - List contents
         run: |
-          echo "Contents of _site directory:"
-          find ./_site -type f
+          echo "Contents of ai-api-integration:"
+          ls -R ai-api-integration
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+          future: true
+          verbose: true
+
+      - name: Set permissions
+        run: |
+          sudo chown -R $USER:$USER ./_site
+
+      - name: Rename README.html to index.html
+        run: |
+          sudo find ./_site -name "README.html" -exec sh -c 'mv "$0" "${0%README.html}index.html"' {} \;
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
-        with:
-          path: ./_site
 
   deploy:
     environment:
