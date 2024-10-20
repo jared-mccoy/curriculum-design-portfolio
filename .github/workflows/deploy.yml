@@ -17,19 +17,12 @@ jobs:
       - name: Checkout code with submodules
         uses: actions/checkout@v3
         with:
-          submodules: 'recursive'
-
-      - name: List root directory contents
-        run: ls -la
+          submodules: true
 
       - name: Copy submodule contents
         run: |
-          if [ -d "AI-API-Integration" ]; then
-            mkdir -p ai-api-integration
-            cp -R AI-API-Integration/* ai-api-integration/ || true
-          else
-            echo "AI-API-Integration directory not found"
-          fi
+          mkdir -p ai-api-integration
+          cp -R AI-API-Integration/* ai-api-integration/
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -53,10 +46,8 @@ jobs:
 
       - name: Debug - List contents
         run: |
-          echo "Contents of root directory:"
-          ls -R
           echo "Contents of ai-api-integration:"
-          ls -R ai-api-integration || echo "ai-api-integration directory not found"
+          ls -R ai-api-integration
 
       - name: Setup Pages
         uses: actions/configure-pages@v3
@@ -76,11 +67,6 @@ jobs:
       - name: Rename README.html to index.html
         run: |
           sudo find ./_site -name "README.html" -exec sh -c 'mv "$0" "${0%README.html}index.html"' {} \;
-
-      - name: Debug - List _site contents
-        run: |
-          echo "Contents of _site directory:"
-          ls -R ./_site
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
