@@ -71,6 +71,12 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
 
+      - name: Update links in README files
+        run: |
+          find . -name "README.md" | while read file; do
+            sed -i 's/\.ipynb)/\.html)/g' "$file"
+          done
+
   deploy:
     environment:
       name: github-pages
