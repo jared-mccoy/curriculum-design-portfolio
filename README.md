@@ -38,3 +38,15 @@ Selections from an introductory course covering OpenAI's GPT API.
 Learn to analyze and critique arguments, enhancing your ability to communicate and persuade effectively.
 
 [Start Course](introduction-to-rhetorical-analysis/)
+
+# <a href="https://surfacescholar.com/">Surface / Scholar</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="https://surfacescholar.com/">
+    <img src="introduction-to-rhetorical-analysis/Obsidian-Graph.png" alt="Surface / Scholar" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+A personal website demonstrating new approaches to concept mapping and networked curriculum design.
+
+[Visit Surface / Scholar](https://surfacescholar.com/)

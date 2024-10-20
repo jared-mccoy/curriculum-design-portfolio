@@ -1,3 +1,4 @@
+theme: jekyll-theme-slate
 
 plugins:
   - jekyll-readme-index
@@ -10,10 +11,3 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-# Custom settings
-title: Curriculum Design Portfolio
-description: Excerpts and samples taken from non-proprietary courses.
-
-# Google Fonts
-google_fonts: "https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600&display=swap"
