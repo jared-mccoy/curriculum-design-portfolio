@@ -13,7 +13,7 @@ title: My Portfolio
 
 Articulate and manage change effectively, ensuring stakeholder buy-in and support.
 
-[Start Course](mastering-change-management-and-stakeholder-engagement/)
+[Preview Course](mastering-change-management-and-stakeholder-engagement/)
 
 # <a href="ai-api-integration/">AI API Integration</a>
 
@@ -25,7 +25,7 @@ Articulate and manage change effectively, ensuring stakeholder buy-in and suppor
 
 Selections from an introductory course covering OpenAI's GPT API.
 
-[Start Course](ai-api-integration/)
+[Preview Course](ai-api-integration/)
 
 # <a href="introduction-to-rhetorical-analysis/">Introduction to Rhetorical Analysis</a>
 
@@ -37,7 +37,7 @@ Selections from an introductory course covering OpenAI's GPT API.
 
 Learn to analyze and critique arguments, enhancing your ability to communicate and persuade effectively.
 
-[Start Course](introduction-to-rhetorical-analysis/)
+[Preview Course](introduction-to-rhetorical-analysis/)
 
 # <a href="https://surfacescholar.com/">Surface / Scholar</a>
 
@@ -49,4 +49,4 @@ Learn to analyze and critique arguments, enhancing your ability to communicate a
 
 A personal website demonstrating new approaches to concept mapping and networked curriculum design.
 
-[Visit Surface / Scholar](https://surfacescholar.com/)
+[Visit Site](https://surfacescholar.com/)
