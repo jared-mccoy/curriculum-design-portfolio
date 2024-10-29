@@ -3,9 +3,8 @@ layout: default
 title: My Portfolio
 ---
 
-<div class="callout note">
-  Titles ending with an asterisk (*) are mockups from which proprietary content has been modified/removed.
-</div>
+
+> NOTE: Titles ending with an asterisk (*) are mockups from which proprietary content has been modified/removed.
 
 # <a href="https://surfacescholar.com/">Surface / Scholar</a>
 
@@ -17,6 +16,8 @@ title: My Portfolio
 
 Personal brand website demonstrating new approaches to concept mapping and networked curriculum design that I built using Obsidian, MongoDB and Quartz. For more traditional (less experimental) offerings see selections below. 
 
+[Visit Site](https://surfacescholar.com/)
+
 # <a href="ai-api-integration/">AI API Integration*</a>
 
 <div style="width: 100%; height: 200px; overflow: hidden;">
@@ -25,11 +26,9 @@ Personal brand website demonstrating new approaches to concept mapping and netwo
   </a>
 </div>
 
-Selections from an introductory course covering OpenAI's GPT API.
+Selections from an introductory course on API integrations with AI.
 
 [Preview Course](ai-api-integration/)
-
-[Visit Site](https://surfacescholar.com/)
 
 # <a href="mastering-change-management-and-stakeholder-engagement/">Mastering Change Management and Stakeholder Engagement*</a>
 
