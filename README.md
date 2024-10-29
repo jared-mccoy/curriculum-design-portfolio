@@ -3,7 +3,47 @@ layout: default
 title: My Portfolio
 ---
 
-# <a href="mastering-change-management-and-stakeholder-engagement/">Mastering Change Management and Stakeholder Engagement</a>
+> [!NOTE]
+> Titles ending with an asterisk (*) are mockups from which proprietary content has been modified/removed.
+
+# <a href="https://surfacescholar.com/">Surface / Scholar</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="https://surfacescholar.com/">
+    <img src="introduction-to-rhetorical-analysis/Obsidian-Graph.png" alt="Surface / Scholar" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+Personal website demonstrating new approaches to concept mapping and networked curriculum design that I built using Obsidian, MongoDB and Quartz. For more traditional (less experimental) offerings see selections below. 
+
+[Visit Site](https://surfacescholar.com/)
+
+
+# <a href="https://youtu.be/0UeW_UodW3M">Hypothes.is Overview</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="https://youtu.be/0UeW_UodW3M">
+    <img src="introduction-to-rhetorical-analysis/hypothesis-overview.webp" alt="Personal Knowledgebase" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+Quick overview of how to set up Hypothes.is, annotate websites and PDFs, link annotations and search metadata (with a few observations and feature requests along the way).
+
+[Start Tutorial](https://youtu.be/0UeW_UodW3M)
+
+# <a href="https://www.youtube.com/playlist?list=PLg-Z7WkpEvA7ay5SVNRYhTULh12JZckex">Personal Knowledgebase</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="https://youtu.be/dKGZlfaiE0E">
+    <img src="introduction-to-rhetorical-analysis/personal-knowledgebase-2017.webp" alt="Personal Knowledgebase" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+Platform comparison, overview of features, and workflow demonstrations of how to use a personal knowledgebase to organize your research and writing.
+
+[Start Tutorial](https://www.youtube.com/playlist?list=PLg-Z7WkpEvA7ay5SVNRYhTULh12JZckex)
+
+# <a href="mastering-change-management-and-stakeholder-engagement/">Mastering Change Management and Stakeholder Engagement*</a>
 
 <div style="width: 100%; height: 200px; overflow: hidden;">
   <a href="mastering-change-management-and-stakeholder-engagement/">
@@ -39,14 +79,3 @@ Learn to analyze and critique arguments, enhancing your ability to communicate a
 
 [Preview Course](introduction-to-rhetorical-analysis/)
 
-# <a href="https://surfacescholar.com/">Surface / Scholar</a>
-
-<div style="width: 100%; height: 200px; overflow: hidden;">
-  <a href="https://surfacescholar.com/">
-    <img src="introduction-to-rhetorical-analysis/Obsidian-Graph.png" alt="Surface / Scholar" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-  </a>
-</div>
-
-A personal website demonstrating new approaches to concept mapping and networked curriculum design.
-
-[Visit Site](https://surfacescholar.com/)
