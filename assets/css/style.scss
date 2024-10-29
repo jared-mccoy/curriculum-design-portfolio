@@ -28,6 +28,18 @@ img {
   height: auto;
 }
 
+.callout {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  
+  &.note {
+    background-color: #2d333b;
+    border-left: 4px solid #4a9ae1;
+    color: #e0e0e0;
+  }
+}
+
 // Optionally, you can add any minor adjustments here if needed
 // For example:
 // .highlight {

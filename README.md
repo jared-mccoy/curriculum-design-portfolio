@@ -3,8 +3,9 @@ layout: default
 title: My Portfolio
 ---
 
-> [!NOTE]
-> Titles ending with an asterisk (*) are mockups from which proprietary content has been modified/removed.
+<div class="callout note">
+  Titles ending with an asterisk (*) are mockups from which proprietary content has been modified/removed.
+</div>
 
 # <a href="https://surfacescholar.com/">Surface / Scholar</a>
 
@@ -14,9 +15,33 @@ title: My Portfolio
   </a>
 </div>
 
-Personal website demonstrating new approaches to concept mapping and networked curriculum design that I built using Obsidian, MongoDB and Quartz. For more traditional (less experimental) offerings see selections below. 
+Personal brand website demonstrating new approaches to concept mapping and networked curriculum design that I built using Obsidian, MongoDB and Quartz. For more traditional (less experimental) offerings see selections below. 
+
+# <a href="ai-api-integration/">AI API Integration*</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="ai-api-integration/">
+    <img src="ai-api-integration/AI-API-Integration.webp" alt="AI API Integration" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+Selections from an introductory course covering OpenAI's GPT API.
+
+[Preview Course](ai-api-integration/)
 
 [Visit Site](https://surfacescholar.com/)
+
+# <a href="mastering-change-management-and-stakeholder-engagement/">Mastering Change Management and Stakeholder Engagement*</a>
+
+<div style="width: 100%; height: 200px; overflow: hidden;">
+  <a href="mastering-change-management-and-stakeholder-engagement/">
+    <img src="mastering-change-management-and-stakeholder-engagement/mastering-change-management-and-stakeholder-engagement.webp" alt="Mastering Change Management and Stakeholder Engagement" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
+  </a>
+</div>
+
+Articulate and manage change effectively, ensuring stakeholder buy-in and support.
+
+[Preview Course](mastering-change-management-and-stakeholder-engagement/)
 
 
 # <a href="https://youtu.be/0UeW_UodW3M">Hypothes.is Overview</a>
@@ -43,29 +68,6 @@ Platform comparison, overview of features, and workflow demonstrations of how to
 
 [Start Tutorial](https://www.youtube.com/playlist?list=PLg-Z7WkpEvA7ay5SVNRYhTULh12JZckex)
 
-# <a href="mastering-change-management-and-stakeholder-engagement/">Mastering Change Management and Stakeholder Engagement*</a>
-
-<div style="width: 100%; height: 200px; overflow: hidden;">
-  <a href="mastering-change-management-and-stakeholder-engagement/">
-    <img src="mastering-change-management-and-stakeholder-engagement/mastering-change-management-and-stakeholder-engagement.webp" alt="Mastering Change Management and Stakeholder Engagement" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-  </a>
-</div>
-
-Articulate and manage change effectively, ensuring stakeholder buy-in and support.
-
-[Preview Course](mastering-change-management-and-stakeholder-engagement/)
-
-# <a href="ai-api-integration/">AI API Integration</a>
-
-<div style="width: 100%; height: 200px; overflow: hidden;">
-  <a href="ai-api-integration/">
-    <img src="ai-api-integration/AI-API-Integration.webp" alt="AI API Integration" style="width: 100%; height: 100%; object-fit: cover; object-position: center;">
-  </a>
-</div>
-
-Selections from an introductory course covering OpenAI's GPT API.
-
-[Preview Course](ai-api-integration/)
 
 # <a href="introduction-to-rhetorical-analysis/">Introduction to Rhetorical Analysis</a>
 
